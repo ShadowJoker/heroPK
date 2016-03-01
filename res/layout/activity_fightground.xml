@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" >
+
+                <ImageView
+                    android:id="@+id/fg_hero1icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/mg_icon" />
+
+                <TextView
+                    android:id="@+id/fg_hero1name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/fg_hero1icon"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/mg" />
+
+                <TextView
+                    android:id="@+id/fg_hero1health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/fg_hero1name"
+                    android:layout_below="@+id/fg_hero1name"
+                    android:text="@string/fightgroundsample1" />
+
+                <TextView
+                    android:id="@+id/fg_hero1damage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/fg_hero1health"
+                    android:text="@string/fightgroundsample2" />
+
+                <TextView
+                    android:id="@+id/fg_hero1attackrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/fg_hero1damage"
+                    android:text="@string/fightgroundsample3" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="100dp" >
+
+                <ImageView
+                    android:id="@+id/fg_hero2icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/bm_icon" />
+
+                <TextView
+                    android:id="@+id/fg_hero2name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/fg_hero2icon"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/bm" />
+
+                <TextView
+                    android:id="@+id/fg_hero2health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/fg_hero2name"
+                    android:layout_below="@+id/fg_hero2name"
+                    android:text="@string/fightgroundsample4" />
+
+                <TextView
+                    android:id="@+id/fg_hero2damage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/fg_hero2health"
+                    android:text="@string/fightgroundsample5" />
+
+                <TextView
+                    android:id="@+id/fg_hero2attackrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/fg_hero2damage"
+                    android:text="@string/fightgroundsample6" />
+            </RelativeLayout>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/fg_tablerow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/fg_bt_startfight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/fight"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/fg_tv_fighttimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="false"
+            android:text="@string/fightgroundsample7"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/fg_tv_fightinfotitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="false"
+            android:text="@string/fightgroundsample8"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/fg_scorllview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent" >
+
+            <TextView
+                android:id="@+id/fg_tv_fightinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:maxWidth="300dp"
+                android:singleLine="false"
+                android:text="@string/fightgroundsample9"
+                android:textSize="12sp" />
+        </ScrollView>
+    </TableRow>
+
+</TableLayout>

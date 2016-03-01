@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/sh_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/vs"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/sh_imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/sh_textView1"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/mg_icon" />
+
+    <ImageView
+        android:id="@+id/sh_imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_toRightOf="@+id/sh_textView1"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/bm_icon" />
+
+    <TextView
+        android:id="@+id/sh_heroText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sh_button1"
+        android:layout_alignBottom="@+id/sh_button1"
+        android:layout_toRightOf="@+id/sh_button1"
+        android:layout_marginLeft="15dp"
+        android:text="@string/bm"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/sh_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sh_textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="@string/fight" />
+
+    <TextView
+        android:id="@+id/sh_heroText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sh_button1"
+        android:layout_alignBottom="@+id/sh_button1"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/sh_button1"
+        android:text="@string/mg"
+        android:textSize="18sp" />
+
+</RelativeLayout>

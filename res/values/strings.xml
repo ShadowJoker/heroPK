@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">英雄大乱斗</string>
+    <string name="action_settings">设置</string>
+    <string name="pkmode">英雄乱斗</string>
+    <string name="challengemode">挑战闯关</string>
+    <string name="herotownmode">英雄殿堂</string>
+    <string name="vs">对阵</string>
+    <string name="fight">开始战斗</string>
+    <string name="todo">TODO</string>
+    <string name="bm">野蛮人</string>
+    <string name="dh">恶魔猎人</string>
+    <string name="mk">武僧</string>
+    <string name="pd">圣骑士</string>
+    <string name="mg">魔法师</string>
+    <string name="fightgroundsample1">生命值：500</string>
+    <string name="fightgroundsample2">攻击力：20</string>
+    <string name="fightgroundsample3">攻击频率：1.0s</string>
+    <string name="fightgroundsample4">生命值：650</string>
+    <string name="fightgroundsample5">攻击力：40</string>
+    <string name="fightgroundsample6">攻击频率：1.5s</string>
+    <string name="fightgroundsample7">战斗时间 0.0s</string>
+    <string name="fightgroundsample8">战斗记录</string>
+    <string name="fightgroundsample9">战斗记录详细</string>
+
+</resources>
